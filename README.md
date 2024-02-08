@@ -18,9 +18,9 @@ docker build --tag=sol:latest .
 # run the docker container
 
 # interactive mode with port forwarding
-docker run -it -p 5000:5000 --rm --name=sol sol:latest
+docker run -it -p 8000:8000 --rm --name=sol sol:latest
 # or detached mode with port forwarding
-docker run -d -p 5000:5000 --rm --name=sol sol:latest
+docker run -d -p 8000:8000 --rm --name=sol sol:latest
 # or detached mode with random port forwarding
 docker run -d -P --rm --name=sol sol:latest
 ```
