@@ -17,9 +17,7 @@ docker build --tag=sol:latest .
 
 # run the docker container
 
-# interactive mode
-docker run -it --rm --name sol sol:latest
-# or interactive mode with port forwarding
+# interactive mode with port forwarding
 docker run -it -p 5000:5000 --rm --name=sol sol:latest
 # or detached mode with port forwarding
 docker run -d -p 5000:5000 --rm --name=sol sol:latest
@@ -31,6 +29,13 @@ docker run -d -P --rm --name=sol sol:latest
 ```bash
 # create a virtual environment
 python -m venv .venv
+# activate the virtual environment
+# on linux
+source .venv/bin/activate
+# on windows CMD
+".venv\scripts\activate"
+# on windows PowerShell
+.venv\scripts\activate
 # install the dependencies
 pip install -r requirements.txt
 # initialize the database
@@ -39,4 +44,4 @@ python init_db.py
 # run the application
 python main.py
 ```
-Might need replace `python` with `python3` or `py` depending on the system.
+Might need replace the first `python` with `python3` or `py` depending on the system.
