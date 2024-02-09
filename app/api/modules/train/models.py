@@ -18,8 +18,8 @@ class Stops(Base):
     train_id: Mapped[int] = mapped_column(ForeignKey("train.train_id"))
     station_id: Mapped[int] = mapped_column(ForeignKey("station.station_id"))
     
-    arrival_time: Mapped[str]
-    departure_time: Mapped[str]
+    arrival_time: Mapped[str] = mapped_column(nullable=True)
+    departure_time: Mapped[str] = mapped_column(nullable=True)
     fare: Mapped[int] 
 
     
