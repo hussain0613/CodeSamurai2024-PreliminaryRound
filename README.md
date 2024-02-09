@@ -1,7 +1,7 @@
 # Code Samurai 2024 - Preliminary Round
 
 ## Team Information
-Team Name: Team ParmunaLastTime \
+Team Name: TEAM_PARMUNALASTTIME \
 University: Ahsanullah University of Science and Technology \
 Team Members: \
     1. Muhammad Hossain (hussain0613@gmail.com) \
