@@ -8,3 +8,17 @@ class StationBase(BaseModel):
 
     class Config:
         from_attributes = True
+
+class StationsResponse(BaseModel):
+    stations: list[StationBase]
+
+
+class StationTrainResponse(BaseModel):
+    station_id: int
+
+    class Train(BaseModel):
+        train_id: int
+        arrival_time: str | None = None
+        departure_time: str | None = None
+    
+    trains: list[Train] = []
